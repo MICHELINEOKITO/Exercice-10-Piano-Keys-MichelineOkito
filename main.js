@@ -23,18 +23,16 @@ function functionNote(note){
     keyPlay(event);
   })
   note.addEventListener("mouseup",(event) =>{
-    keyReturn(event); 
+    keyReturn(event);
   })
   }
 
+
 // Write a loop that runs the array elements through the function
-notes.forEach(functionNote);
+
 
 // These variables store the buttons that progress the user through the lyrics
-let nextOne = document.getElementById('first-next-line');
-let nextTwo = document.getElementById('second-next-line');
-let nextThree = document.getElementById('third-next-line');
-let startOver = document.getElementById('fourth-next-line');
+
 
 // This variable stores the '-END' lyric element
 let lastLyric = document.getElementById('column-optional');
@@ -45,42 +43,22 @@ nextThree.hidden = true;
 startOver.hidden= true;
 
 // Write anonymous event handler property and function for the first progress button
-nextOne.addEventListener("click", () => {
-  nextOne.hidden = true;
-  nextTwo.hidden = false;
-  document.getElementById("letter-note-five").innerHTML = D;
-  document.getElementById("letter-note-six").innerHTML = C;
 
-
-});
  
 
 
 // Write anonymous event handler property and function for the second progress button
-nextTwo.addEventListener("click", () =>{
- 
-  nextThree.hidden = true;
-  nextTwo.hidden = false;
 
-})
 
 // Write anonymous event handler property and function for the third progress button
+
+  
+
+
+  
 
 
 // This is the event handler property and function for the startOver button
 startOver.onclick = function() {
-  nextOne.hidden = false;
-  startOver.hidden = true;
-   document.getElementById('word-one').innerHTML = 'HAP-';
-  document.getElementById('letter-note-one').innerHTML = 'G';
-  document.getElementById('word-two').innerHTML = 'PY';
-  document.getElementById('letter-note-two').innerHTML = 'G';
-  document.getElementById('word-three').innerHTML = 'BIRTH-';
-  document.getElementById('letter-note-three').innerHTML = 'A';
-  document.getElementById('word-four').innerHTML = 'DAY';
-  document.getElementById('letter-note-four').innerHTML = 'G';
-  document.getElementById('word-five').innerHTML = 'TO';
-  document.getElementById('letter-note-five').innerHTML = 'C';
-  document.getElementById('word-six').innerHTML = 'YOU!';
-  document.getElementById('letter-note-six').innerHTML = 'B';
+ 
 }
